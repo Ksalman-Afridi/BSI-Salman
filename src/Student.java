@@ -1,38 +1,16 @@
-class Student {
-    private String name;
+class Student extends Person {
     private int rollNo;
-    private int age;
     private String course;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setRollNo(int rollNo) {
+    public Student(String name, int age, int rollNo, String course) {
+        super(name, age);
         this.rollNo = rollNo;
-    }
-
-    public int getRollNo() {
-        return rollNo;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setCourse(String course) {
         this.course = course;
     }
 
-    public String getCourse() {
-        return course;
+    public void showStudentInfo() {
+        showPersonInfo();
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Course: " + course);
     }
 }
