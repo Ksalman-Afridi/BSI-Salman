@@ -1,38 +1,13 @@
 class Student {
+    private int id;
     private String name;
-    private int rollNo;
-    private int age;
-    private String course;
 
-    public void setName(String name) {
+    public Student(int id, String name) {
+        this.id = id;
         this.name = name;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setRollNo(int rollNo) {
-        this.rollNo = rollNo;
-    }
-
-    public int getRollNo() {
-        return rollNo;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setCourse(String course) {
-        this.course = course;
-    }
-
-    public String getCourse() {
-        return course;
+    public void showStudent() {
+        System.out.println("Student ID: " + id + ", Name: " + name);
     }
 }
