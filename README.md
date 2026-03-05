@@ -6,4 +6,4 @@ Java OOP tasks repository.
 - `main`: stable branch
 - `task-*`: task branches
 
-Task code is committed only on `task-*` branches.
+
